@@ -28,3 +28,7 @@ console.log(testVar3, Boolean(testVar4), typeof Boolean(5), "any_number");
 console.log(testVar3, Boolean(null), typeof Boolean(null), null);
 console.log(testVar3, Boolean(testVar4), typeof Boolean(testVar4), "undefined");
 console.log("_____");
+
+// Boolean() | Empty_string : false | Number 1 : True
+console.log("empty_str", Boolean(""), typeof Boolean(""), "empty_str");
+console.log(1, Boolean(1), typeof Boolean(1), 1);
