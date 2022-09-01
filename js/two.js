@@ -13,3 +13,11 @@ console.log("_____");
 console.log(testVar2, typeof testVar2);
 console.log(Number(testVar2), typeof Number(testVar2));
 console.log("_____");
+
+// Number() | NaN, true = 1 | false = 0
+console.log(testVar3, typeof testVar3);
+console.log(testVar3, Number(testVar3), typeof Number(testVar3));
+console.log(testVar3, Number(testVar3), typeof Number(testVar3));
+console.log(true, Number(true));
+console.log(false, Number(false));
+console.log("_____");
