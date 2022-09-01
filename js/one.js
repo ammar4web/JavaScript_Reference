@@ -10,3 +10,12 @@ console.log(
   "\n",
   "New Line"
 );
+
+console.log(typeof USER_NAME);
+
+console.log(true, false, null);
+// null = empty or to make a variable empty
+// undefined = Without initial value, so the type will be unknown yet.
+
+// BigInt
+const bigInt = 123142546545321322435432n;
