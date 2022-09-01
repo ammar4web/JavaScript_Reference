@@ -21,3 +21,10 @@ console.log(testVar3, Number(testVar3), typeof Number(testVar3));
 console.log(true, Number(true));
 console.log(false, Number(false));
 console.log("_____");
+
+// Boolean() | any_string : true | any_number, null, undefined : false
+console.log(testVar3, Boolean(testVar3), typeof Boolean(testVar3), "any_str");
+console.log(testVar3, Boolean(testVar4), typeof Boolean(5), "any_number");
+console.log(testVar3, Boolean(null), typeof Boolean(null), null);
+console.log(testVar3, Boolean(testVar4), typeof Boolean(testVar4), "undefined");
+console.log("_____");
