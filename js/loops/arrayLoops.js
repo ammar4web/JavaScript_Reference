@@ -13,3 +13,11 @@ for (let webSkile of webSkiles) {
   document.writeln(`<p>${webSkile}<p/>`);
 }
 
+//
+document.writeln(`<br />`);
+//
+
+// Opject loops (for in) or index of Array
+for (let webSkile in webSkiles) {
+  document.writeln(`<p><b>${webSkile}</b> ${webSkiles[webSkile]}<p/>`);
+}
