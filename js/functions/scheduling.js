@@ -16,3 +16,9 @@ clearTimeout(timerId);
 // للتشغيل بشكل متكرر بدءا من فترة زمنينة معينة
 let intervalId = setInterval(hello, 2000, "ammar");
 clearInterval(intervalId);
+
+let timerNestedId = setTimeout(function tick(name) {
+  document.writeln(`<p>Hello World!. I'm ${name}</p>`);
+  setTimeout(tick, 1000, "ammar");
+}, 1000);
+clearTimeout(timerNestedId);
