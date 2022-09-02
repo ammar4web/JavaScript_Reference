@@ -8,9 +8,11 @@ function hello(name) {
 }
 
 let timerId = setTimeout(hello, 3000, "ammar");
+clearTimeout(timerId);
 // 2 parameters: method | the time, then parameters of the method
 // method 'hello' with out '()'
 
 // setInterval
 // للتشغيل بشكل متكرر بدءا من فترة زمنينة معينة
 let intervalId = setInterval(hello, 2000, "ammar");
+clearInterval(intervalId);
