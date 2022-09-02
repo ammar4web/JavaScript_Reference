@@ -18,3 +18,14 @@ function greetingsPara(name, job = "Web Developer") {
 greetingsPara("Ahmad", "FrontEnd");
 greetingsPara("Mohammed", "BackEnd");
 greetingsPara("Hady");
+
+//
+document.writeln(`<br />`);
+//
+
+function greetingsParaRe(num1 = 0, num2 = 0) {
+  return num1 + num2;
+}
+
+let result = greetingsParaRe(2, 2);
+document.writeln(result * 10);
