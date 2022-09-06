@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Validation</title>
+    <style>
+      .error {
+        color: red;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Subscription Form</h1>
+      <form action="" id="myForm" onsubmit="return validateShort();">
+        <div>
+          <label for="age">Age</label>
+          <input type="text" name="age" id="age" />
+        </div>
+        <div>
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree">I agree to the terms and conditions</label>
+        </div>
+        <input type="submit" value="Register" />
+        <input type="reset" value="Clear" />
+        <input type="button" value="TestAge" onclick="testAge()" />
+        <input type="button" value="TestAgree" onclick="testAggre()" />
+      </form>
+    </section>
+
+    <script src="js/validation.js"></script>
+  </body>
+</html>
