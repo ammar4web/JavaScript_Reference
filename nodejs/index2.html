@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nodejs\Express Server</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" id="myForm">
+      <input
+        type="text"
+        name="formName"
+        id="formName"
+        placeholder="User Name"
+      />
+      <input type="email" name="formEmail" id="formEmail" placeholder="Email" />
+      <input type="submit" value="submit" />
+    </form>
+
+    <script>
+      myForm.onsubmit = async (e) => {
+        e.preventDefault();
+        //
+        const data = {
+          name: formName.value,
+          email: formEmail.value,
+        };
+        //
+        console.log(data);
+        const response = await fetch("http://127.0.0.1:3000/user", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+        const result = await response.json();
+        console.log(result.message);
+      };
+    </script>
+  </body>
+</html>
