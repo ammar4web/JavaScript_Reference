@@ -5,7 +5,13 @@ class Person {
   hello() {
     console.log("Hello World!");
   }
+
+  static staticMethodExample() {
+    console.log("hello from static method");
+  }
 }
+
+Person.staticMethodExample();
 
 const person = new Person("Ammar");
 
