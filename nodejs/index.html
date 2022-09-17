@@ -12,10 +12,20 @@
     <!-- external file doesn't Work-->
     <!-- <script src="js/fetch.js"></script> -->
     <script>
-      fetch("http://127.0.0.1:3000/user")
-        .then((Response) => Response.json())
-        .then((users) => console.log(users))
-        .catch((error) => console.log("Error: ", error));
+      // fetch("http://127.0.0.1:3000/user")
+      //   .then((Response) => Response.json())
+      //   .then((users) => console.log(users))
+      //   .catch((error) => console.log("Error: ", error));
+
+      async function fetchUsers() {
+        try {
+          const response = await fetch("http://127.0.0.1:3000/user");
+          let users = await response.json();
+          console.log(users);
+        } catch (e) {
+          console.log("e");
+        }
+      }
     </script>
   </body>
 </html>
