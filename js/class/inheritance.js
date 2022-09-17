@@ -28,3 +28,12 @@ const person = new Student("Ammar", 24, "3");
 console.log(person.name);
 person.hello();
 person.hello2();
+
+console.log("-----")
+console.log(person instanceof Person)
+console.log(person instanceof Student)
+console.log(person instanceof Object)
+
+console.log("-----")
+let arr = [];
+console.log(arr instanceof Array)
