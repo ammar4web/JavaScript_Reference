@@ -11,6 +11,7 @@
 
     <!-- external file doesn't Work-->
     <!-- <script src="js/fetch.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
       // fetch("http://127.0.0.1:3000/user")
       //   .then((Response) => Response.json())
@@ -19,13 +20,16 @@
 
       async function fetchUsers() {
         try {
-          const response = await fetch("http://127.0.0.1:3000/user");
-          let users = await response.json();
-          console.log(users);
+          const response = await axios.get("http://127.0.0.1:3000/user");
+          console.log(response.data);
+          // const response = await fetch("http://127.0.0.1:3000/user");
+          // let users = await response.json();
+          // console.log(users);
         } catch (e) {
-          console.log("e");
+          console.log(e);
         }
       }
+      fetchUsers();
     </script>
   </body>
 </html>
