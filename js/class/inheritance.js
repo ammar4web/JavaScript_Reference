@@ -16,6 +16,10 @@ class Student extends Person {
     this.level = level;
   }
 
+  hello() {
+    console.log("Hello There! Your are a student");
+  }
+
   hello2() {
     console.log("Hello World! This from Studnet");
   }
